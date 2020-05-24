@@ -1,0 +1,130 @@
+body {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-evenly;
+}
+.navigation__catalog {
+  color: #0c96f1;
+  font-size: 28px;
+  font-weight: 400;
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  outline: none;
+  transition-duration: 0.3s;
+}
+.navigation__catalog:hover {
+  color: #db2626;
+}
+.navigation__favorites {
+  color: #0c96f1;
+  font-size: 28px;
+  font-weight: 400;
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  outline: none;
+  transition-duration: 0.3s;
+}
+.navigation__favorites:hover {
+  color: #db2626;
+}
+
+.wrapper_forItems, .wrapper_forAlbums {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.wrapper_forItems:hover, .wrapper_forAlbums:hover {
+  color: red;
+}
+
+.closed + ul {
+  display: none;
+}
+
+.arrowDown .material-icons_chevron {
+  transition: transform 0.3s linear;
+  transform: rotate(90deg);
+}
+
+.title_hide {
+  display: none;
+}
+
+.photos .wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.material-icons {
+  color: gray;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.material-icons:hover {
+  transform: scale(1.2);
+  color: #f8b90a;
+}
+
+.wrapper_forPhotos {
+  margin-top: 10px;
+}
+
+.content, .photosFavorites {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.smallImg {
+  cursor: pointer;
+}
+
+.photos {
+  display: flex;
+  flex-direction: column;
+}
+
+.hide {
+  display: none;
+}
+
+.photos__item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.favorites-photos {
+  display: flex;
+  flex-direction: column;
+}
+.favorites-photos__item-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.active {
+  color: #f8b90a;
+}
+
+.yellowStar {
+  color: #f8b90a;
+}
+
+/*# sourceMappingURL=style.css.map */
